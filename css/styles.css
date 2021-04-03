@@ -35,12 +35,12 @@ h1 {
   z-index: 2;
 }
 
-/*=============================
+/*=======================================
 
 
 Header Styling
 
-*===========================*/
+========================================*/
 
 header {
   background: rgb (0 0 0 / 70%)
@@ -51,10 +51,6 @@ header {
   z-index: 999999;
 }
 
-header nav li {
-  display: inline-block;
-}
-
 header a {
     font-weight: bold;
     text-transform: uppercase;
@@ -62,30 +58,27 @@ header a {
     margin: 0 20px;
   }
 
-  /*=============================
+  /*=======================================
 
 
-  Hero section Styling
+  Navigation Styling
 
-  *===========================*/
+  ========================================*/
 
-.top-hero {
-  background: url('../images/star-wars.jpg') right/cover no-repeat fixed;
-  min-height: 100vh;
-  position: relative;
+nav a {
+  text-decoration: none;
+  color: #333;
+  background: #f2f2f2;
+  padding: 10px 20px;
+  transition: .5s;
+  width: 100px;
 }
 
-.top-hero img {
-  margin: 100 px 0 0 200px;
-  max-width: 600px;
-}
-
-.hero-content {
-  color: white;
-  position: absolute;
-  top: 50%;
-  right: 25%;
-
+nav a:hover {
+  background: #333;
+  color: #f2f2f2;
+  transition: .5s;
+  padding: 30px 50px;
 }
 
 h1 {
@@ -93,13 +86,14 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  text-transform: uppercase;
-  font-size: 48px;
-}
-
 .hero-content p {
   font-size: 24px;
+}
+
+.nav {
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 main {
