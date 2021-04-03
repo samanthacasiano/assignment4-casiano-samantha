@@ -20,12 +20,13 @@
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 
 h1 {
-  font-size: 64px;
+  font: 60px "Starjedi";
+  text-align: center;
 }
 
 .container {
@@ -65,13 +66,20 @@ header a {
 
   ========================================*/
 
+.nav {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+nav ul li {
+  display: inline;
+}
+
 nav a {
   text-decoration: none;
   color: #333;
   background: #f2f2f2;
-  padding: 10px 20px;
-  transition: .5s;
-  width: 100px;
+  padding: 30px 50px;
 }
 
 nav a:hover {
@@ -80,6 +88,13 @@ nav a:hover {
   transition: .5s;
   padding: 30px 50px;
 }
+
+/*=======================================
+
+
+Body Styling
+
+========================================*/
 
 img {
   max-width: 100%;
@@ -94,27 +109,8 @@ main {
   padding: 100px;
 }
 
-h1 {
-  font: 60px "Starjedi";
-  text-align: center;
-}
-
 .hero-content p {
   font-size: 24px;
-}
-
-.nav {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-main {
-  font-family: 'Open Sans', sans-serif;
-  background: white;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 100px;
 }
 
 img {
@@ -122,8 +118,18 @@ img {
   margin: 0px 50px 50px;
 }
 
+/*=======================================
+
+  Footer styling
+
+========================================*/
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
 .millennium {
-  position: relative;
+  position: absolute;
   animation: fly 7s forwards infinite linear;
 }
 
