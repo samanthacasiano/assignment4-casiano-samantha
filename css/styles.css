@@ -143,25 +143,15 @@ img {
   color: white;
 }
 
-/*=======================================
-
-  Footer styling
-
-========================================*/
-footer {
-    text-align: center;
-    padding: 0;
-}
-
 .millennium {
   background-color: none;
-  position: relative;
+  position: static;
   animation: fly 7s forwards infinite linear;
 }
 
 @keyframes fly {
   from {
-    transform: translateX(-925px);
+    transform: translateX(150px);
   }
   to {
     transform: translateX(925px);
