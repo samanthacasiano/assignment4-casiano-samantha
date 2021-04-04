@@ -16,14 +16,6 @@
   format('truetype');
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  font-family: "Open Sans", sans-serif;
-  box-sizing: border-box;
-}
-
 h1 {
   font: 60px "Starjedi";
   text-align: center;
@@ -38,6 +30,33 @@ h1 {
 
 .highlight {
   background-color: #eee;
+}
+
+.learn-more a {
+  background: black;
+  padding: 20px 20px;
+  border-radius: 10px;
+  color: yellow;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*=======================================
+
+
+Hero Styling
+
+========================================*/
+
+.top-hero {
+  background: url('../img/star-wars.jpg') right/cover no-repeat fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.top-hero img {
+  margin: 100 px 0 0 200px;
+  max-width: 600px;
 }
 
 /*=======================================
@@ -56,6 +75,10 @@ header {
   z-index: 999999;
 }
 
+header nav li {
+  display: inline-block;
+}
+
 header a {
     font-weight: bold;
     text-transform: uppercase;
@@ -70,16 +93,12 @@ header a {
 
   ========================================*/
 
-.nav {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
 nav ul li {
   display: inline;
 }
 
 nav a {
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   color: #333;
   background: #f2f2f2;
@@ -100,17 +119,14 @@ Body Styling
 
 ========================================*/
 
-img {
-  max-width: 100%;
-  max-height: 100%;
+body {
+  background: url("../img/background.jpg") no-repeat 0 0/cover;
 }
+
 
 main {
   font-family: 'Open Sans', sans-serif;
   background: white;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 100px;
 }
 
 .hero-content p {
@@ -133,15 +149,16 @@ footer {
 }
 
 .millennium {
-  position: fixed;
+  background-color: none;
+  position: absolute;
   animation: fly 7s forwards infinite linear;
 }
 
 @keyframes fly {
   from {
-    transform: translateX(-1000px);
+    transform: translateX(50px);
   }
   to {
-    transform: translateX(1000px);
+    transform: translateX(925px);
   }
 }
