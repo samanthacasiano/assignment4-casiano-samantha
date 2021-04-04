@@ -18,7 +18,8 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2 {
   font: 60px "Starjedi";
   text-align: center;
 }
@@ -26,7 +27,7 @@ h1 {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  position; relative;
+  position: relative;
   z-index: 2;
 }
 
@@ -63,8 +64,7 @@ Header Styling
 ========================================*/
 
 header {
-  background: rgb (0 0 0 / 70%)
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 30px;
   text-align: right;
   position: fixed;
@@ -139,12 +139,10 @@ img {
   text-decoration: none;
   margin-top: 50px;
   padding: 20px 20px;
-  border-radius: 10px;
   color: white;
 }
 
 .millennium {
-  background-color: none;
   position: static;
   animation: fly 7s forwards infinite linear;
 }
