@@ -16,6 +16,14 @@
   format('truetype');
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 h1 {
   font: 60px "Starjedi";
   text-align: center;
@@ -54,9 +62,12 @@ Hero Styling
   position: relative;
 }
 
-.top-hero img {
-  margin: 100 px 0 0 200px;
-  max-width: 600px;
+.hero-content {
+  color: white;
+  text-shadow: 4px 4px black;
+  position: absolute;
+  top: 40%;
+  right: 5%;
 }
 
 /*=======================================
@@ -127,15 +138,13 @@ body {
 main {
   font-family: 'Open Sans', sans-serif;
   background: white;
-}
-
-.hero-content p {
-  font-size: 24px;
+  padding-bottom: 150px;
+  margin-bottom: 0px;
 }
 
 img {
   float: left;
-  margin: 0px 50px 50px;
+  margin: 10px 50px 50px 50px;
 }
 
 /*=======================================
@@ -150,13 +159,13 @@ footer {
 
 .millennium {
   background-color: none;
-  position: absolute;
+  position: relative;
   animation: fly 7s forwards infinite linear;
 }
 
 @keyframes fly {
   from {
-    transform: translateX(50px);
+    transform: translateX(-925px);
   }
   to {
     transform: translateX(925px);
