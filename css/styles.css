@@ -132,12 +132,16 @@ img {
   margin: 10px 50px 50px 50px;
 }
 
+.right-half {
+  margin: 50px;
+}
+
 .learn-more a {
   position: absolute;
   background: black;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 50px;
+  margin-top: 5px;
   padding: 20px 20px;
   color: white;
 }
